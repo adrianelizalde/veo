@@ -177,13 +177,17 @@ img {
 .col1 {
 }
 
-.col2 {
-}
-
 .col3 {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.col4 {
+}
+
+.col4-img {
+  height: auto;
 }
 
 .col3-flex {
@@ -193,8 +197,12 @@ img {
 .col4-flex {
 }
 
-.img_float3, .img_float4 {
-  width: 100%;
+.img_float3 {
+  width:36%;
+}
+
+.img_float4 {
+  width:64%;
 }
 
 .text_project {
@@ -218,8 +226,19 @@ img {
     padding-top: 0.5%;
 }
 
+.img_float3 {
+    float: left;
+    height: auto;
+    margin: auto;
+    padding-top: 0.5%;
+}
 
-
+.img_float4 {
+    float: right;
+    height: auto;
+    margin: auto;
+    padding-top: 0.5%;
+}
 
 /*INFO*/
 
