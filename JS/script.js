@@ -1,28 +1,37 @@
 var list = [
-  ['Adrian', 'guapo'],
-  ['Victor', 'feo'],
+  ['Adrian','guapo'],
+  ['Victor','feo'],
+  ['Lozano','furcia']
 ];
+
 var listhtml;
 var names;
 var beauty;
-var text;
+var outputDiv;
+var nameSelect;
 
-function print(message) {
-  var outputDiv = document.getElementById('output');
-  outputDiv.innerHTML = message;
+function print(message) {       // why (message)
+  outputDiv = document.getElementById('output').innerHTML = message;
 }
 
-for (i = 0; i < list.length; i+= 1) {
-  var names = list[i][0];
-  var beauty = list [i][1];
+for (var i = 0; i < list.length; i += 1) {
+  names = list[i][0];
+  beauty = list [i][1];
+  // if (names === 'Lozano') {
+  //   nameSelect.push('Lozano');
+  // } else {
+  //   nameSelect.push('Victor');
+  // }
 }
 
-function buildList(arr) {
+
+
+function buildList(arr) {   // why (arr)
   var listhtml = '<ul>';
-    for (i = 0; i < names.length; i+= 1) {
+    for (var i = 0; i < names.length; i += 1) {
       listhtml += '<li>' + names + '</li>';
     }
-    for (i = 0; i < beauty.length; i+= 1) {
+    for (i = 0; i < beauty.length; i += 1) {
       listhtml += '<li>' + beauty + '</li>';
     }
     listhtml += '</ul>';
@@ -30,6 +39,6 @@ function buildList(arr) {
 }
 
 
-html = "Your name is " + names + " you are ";
-html += buildList(text);
+html = "Your name is " + nameSelect + " you are " + beauty + ".";
+html += buildList(listhtml);  // why (listhtml)
 print(html);
